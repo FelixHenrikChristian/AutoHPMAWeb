@@ -1,3 +1,43 @@
+::: details v3.3.2
+### 🎉 特性：
+- **截屏测试**：重写测试页面的截屏测试功能，支持选择截屏方式和目标窗口，目前支持WGC和BitBlt两种截屏方式。
+- **鼠标模拟**：重写测试页面的鼠标模拟功能，支持自定义点击或拖拽任务列表，顺序执行特定鼠标模拟任务。
+
+### ✨ 优化：
+- **任务通知**：为自动烹饪和自动禁林任务添加了结束通知。
+- **文字识别**：测试页面的文字识别功能新增模型选择，目前支持PaddleOCR和Tesseract。
+- **截屏页面**：移除了多余的截屏页面。
+
+### 🔧 修复：
+- **版本兼容**：修复在最新版MuMu模拟器无法找到游戏窗口的问题，自此版本后不再兼容老版本MuMu模拟器！
+:::
+
+::: details v3.3.1
+### 🎉 特性：
+- **构建流程**：使用Github Action实现整体的一键构建。
+
+### ✨ 优化：
+- **内置更新**：优化内置更新器的更新源，添加cloudflare更新源。
+
+### 🔧 修复：
+- **内置更新**：修复安装包安装缺失更新器的问题。
+:::
+
+::: details v3.3.0
+### 🎉 特性：
+- **内置更新**：使用[Kachina Installer](https://github.com/YuehaiTeam/kachina-installer)实现了软件内置更新。
+- **更新窗口**：添加了崭新的更新窗口，当有新版本时会展示更新内容，提供更新按钮。
+
+### ✨ 优化：
+- **界面优化**：优化了设置页面的关于部分，调整间距以适配新的更新检测按钮。 
+- **自动烹饪**：添加“盐烤海虾”菜谱。
+
+### 🔧 修复：
+- **软件界面**：修复错误的跳转链接。
+
+**注**：自该版本起，Release界面会同时发布`Mica Setup`和`Kachina Installer`的安装包。均可直接用于安装，后者是软件内更新所需，首次使用推荐使用前者。
+:::
+
 ::: details v3.2.0
 ---
 
@@ -38,78 +78,5 @@
 - ** Software License ** : The software license has been changed to GPL-3.0.
 - ** Interface Refresh ** : The software Logo and background image have been replaced.
 - ** Link Replacement ** : The tutorial link is replaced with the link of the newly constructed software introduction page.
-:::
-
-::: details v3.1.2
----
-
-### ✨ 优化：
-- **任务终止**：点击首页停止按钮后，当前子任务会随之终止，控件会恢复默认状态。
-- **任务热键**：热键页面可以添加各项任务的热键绑定。可通过快捷键启动或停止任务。
-- **模板匹配**：灰度图的模板匹配已全部更换为BGR图像匹配，以提高准确率。
-- **自动烹饪**：移除自动烹饪中鼠标拖拽多余的确认操作，以提高效率。
-
-### 🔧 修复：
-- **自动禁林**：修复自动禁林任务中，在战斗阶段误点或漏点自动按钮的问题。
-- **自动烹饪**：修复自动烹饪中，烹饪流程未完成导致误点到结算页面的问题。
-
----
-
-### ✨ Optimizations:
-- ** Task Termination** : After clicking the stop button on the home page, the current subtask will terminate accordingly and the control will return to its default state.
-- ** Task Hotkeys** : The hotkey page can add hotkey bindings for various tasks. Tasks can be started or stopped through shortcut keys.
-- ** Template Matching** : The template matching of grayscale images has all been replaced with BGR image matching to improve the accuracy rate.
-- ** Auto Cooking** : Remove the redundant confirmation operation of mouse dragging in auto cooking to improve efficiency.
-
-### 🔧 Fix:
-- ** Auto Forbidden Forest** : Fixed the issue of accidentally clicking or missing the automatic button during the battle stage.
-- ** Auto Cooking** : Fixed the issue where the cooking process was not completed during auto cooking, causing accidental clicking on the settlement page.
-:::
-
-::: details v3.1.1
----
-
-### 🔧 修复：
-- **键盘监听**：修复键盘监听导致的键盘延迟及卡顿问题。
-
----
-
-### 🔧 Fix:
-- ** Keyboard Listening ** : Fixed the keyboard lag and stuttering issues caused by keyboard listening.
-:::
-
-::: details v3.1.0
----
-
-### 🎉 特性：
-- **自动烹饪**：基本实现了自动烹饪功能，目前支持3个菜谱，后续会加入其他菜谱的支持。
-- **热键绑定**：添加热键绑定功能，目前支持快捷键截图，后续会加入更多热键功能。
-
-
-### ✨ 优化：
-- **任务分类**：将自动任务分为两类：“常驻任务”和“限时活动”。
-- **模板匹配**：模板匹配现会根据输入的BGRA图像生成相应的Mask，使透明区域不参与匹配。
-- **色彩过滤**：在测试页面新增了色彩过滤功能，可以根据输入的十六进制颜色代码和阈值过滤相似色彩。
-- **一键裁剪**：在测试页面的模板匹配添加了裁剪按钮，可以一键裁剪上次匹配出的Rect。
-- **遮罩窗口**：遮罩窗口新增了文字标注功能，可以在Rect上添加文字标记。
-
-### 🔧 修复：
-- **任务终止**：修复任务达到次数自主终止后，按钮不恢复的问题。
-
----
-
-### 🎉 Features: 
-- **Auto Cook**: The basic automatic cooking function has been realized, supporting three recipes currently. More recipes will be added in the future.
-- **Hotkey Binding**: The hotkey binding function has been accomplished. Users can take screenshots with hotkeys by now.More hotkey functions will be added later. 
-
-### ✨ Optimizations:
-- **Task Classification**: Classify automatic tasks into two categories: "Resident Tasks" and "Limited-Time Activities".
-- **Template Matching**: Template matching now generates corresponding masks based on the input BGRA image, ensuring that transparent areas do not participate in the matching process.
-- **Color Filtering**: A color filtering function has been added to the test page, allowing for the filtering of similar colors based on the input hexadecimal color code and threshold.
-- **One-Click Cropping**: A cropping button has been added to the template matching section of the test page, enabling one-click cropping of the last matched Rect.
-- **Mask Window**: The mask window now includes a text annotation feature, allowing for the addition of text labels on the Rect. 
-
-### 🔧 Fix:
-- **Task Termination**: Fixed the issue where the button did not reset after the task reached the set number of executions and terminated automatically.
 :::
 

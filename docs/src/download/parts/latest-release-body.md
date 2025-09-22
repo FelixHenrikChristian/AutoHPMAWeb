@@ -1,25 +1,13 @@
 ::: info
----
-
 ### 🎉 特性：
-- **自动烹饪**：自动烹饪增加用户自定义菜谱的支持。详细说明请见[官网](https://www.autohpma.top/)。
+- **截屏测试**：重写测试页面的截屏测试功能，支持选择截屏方式和目标窗口，目前支持WGC和BitBlt两种截屏方式。
+- **鼠标模拟**：重写测试页面的鼠标模拟功能，支持自定义点击或拖拽任务列表，顺序执行特定鼠标模拟任务。
 
 ### ✨ 优化：
-- **热键截图**：热键触发的截图功能添加了日志窗口的日志显示，显示保存路径信息。
-- **日志窗口**：日志窗口的日志信息增加了字幕滚动效果，可在启动页面启用或停止。
+- **任务通知**：为自动烹饪和自动禁林任务添加了结束通知。
+- **文字识别**：测试页面的文字识别功能新增模型选择，目前支持PaddleOCR和Tesseract。
+- **截屏页面**：移除了多余的截屏页面。
 
 ### 🔧 修复：
-- **自动烹饪**：由于游戏图像更新，自动烹饪原有素材图已失效，进行了替换。
-
----
-
-### 🎉 Feature:
-- ** Auto Cooking ** : Auto Cooking adds support for user-defined recipes. For detailed instructions, please visit [official website](https://www.autohpma.top/).
-
-### ✨ Optimization:
-- ** Hotkey Screenshot ** : The hotkey-triggered screenshot function has added log display in the log window, showing the save path information.
-- ** Log Window ** : The log information in the log window has added a subtitle scrolling effect, which can be enabled or stopped on the startup page.
-
-### 🔧 Fix:
-- ** Auto Cooking ** : Due to the update of game graphics, the original material images for Auto Cooking have become invalid and have been replaced.
+- **版本兼容**：修复在最新版MuMu模拟器无法找到游戏窗口的问题，自此版本后不再兼容老版本MuMu模拟器！
 :::
