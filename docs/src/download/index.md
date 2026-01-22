@@ -2,7 +2,7 @@
 
 欢迎来到 AutoHPMA 的下载页面！
 
-- [最新版本下载](./latest.md)
-- [历史版本下载](./history.md)
+> [!NOTE]
+> 下载信息实时从 GitHub 获取，如遇加载问题，请直接访问 [GitHub Releases](https://github.com/FelixChristian011226/AutoHPMA/releases) 页面。
 
-请根据您的需求选择合适的版本进行下载和安装。
+<GitHubRelease />

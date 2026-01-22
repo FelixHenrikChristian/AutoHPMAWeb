@@ -1,5 +1,6 @@
 import DefaultTheme from 'vitepress/theme'
 import MyLayout from './Layout.vue'
+import GitHubRelease from './components/GitHubRelease.vue'
 import './custom.css'
 import { useRoute } from 'vitepress';
 import { onMounted, watch, nextTick } from 'vue';
@@ -9,6 +10,9 @@ export default {
   extends: DefaultTheme,
   // 使用注入插槽的包装组件覆盖 Layout
   Layout: MyLayout,
+  enhanceApp({ app }) {
+    app.component('GitHubRelease', GitHubRelease)
+  },
   setup() {
     const route = useRoute();
     const initZoom = () => {

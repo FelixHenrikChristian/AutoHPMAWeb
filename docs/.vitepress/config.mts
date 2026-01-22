@@ -34,7 +34,8 @@ export default defineConfig({
             { text: '介绍', link: '/document/' },
             { text: '安装', link: '/document/install' },
             { text: '使用', link: '/document/usage' },
-            { text: '功能',
+            {
+              text: '功能',
               collapsed: true,
               items: [
                 { text: '社团答题', link: '/document/features/clubquiz' },
@@ -51,8 +52,7 @@ export default defineConfig({
         {
           text: '下载',
           items: [
-            { text: '最新版本', link: '/download/latest' },
-            { text: '历史版本', link: '/download/history' }
+            { text: '获取 AutoHPMA', link: '/download/' }
           ]
         }
       ],
@@ -63,7 +63,8 @@ export default defineConfig({
             { text: '配置文件', link: '/advanced/config' },
             { text: '日志系统', link: '/advanced/logging' },
             { text: '测试功能', link: '/advanced/testing' },
-            { text: '用户扩展',
+            {
+              text: '用户扩展',
               collapsed: true,
               items: [
                 { text: '菜谱定制', link: '/advanced/user-extend/cooking-custom' },
